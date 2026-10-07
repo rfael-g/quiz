@@ -1,3 +1,11 @@
 /*oi mateus*/
 /*faça as suas alterações aqui, e exporte para o repositório*/ 
 /*lembre-se de garantir que não tenha nenhum bug no código*/
+body{
+ background-color: #649;
+}
+main{
+ background-color: #fff;
+ padding: 10px;
+ border-radius: 10px;
+}
