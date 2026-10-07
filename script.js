@@ -29,3 +29,24 @@ function alterar_botoes(botoes) {
   botoes[2].innerText = questoes[questao].opcoes[2]
 }
 perguntar();
+//definindo a resposta correta 
+const resposta_certa = questoes[questao].certa;
+//verificando se tá certo 
+function checar_resposta(opcao_escolhida) {
+  if (opcao_escolhida === questoes[questao].certa) {
+    alert("correto🎉")
+  } else {
+    alert("incorreto❌")
+  }
+  proxima_questao();
+}
+function proxima_questao() {
+  //muda a questão 
+  questao++;
+  //verifica se tem questões sobrando.
+  if (questao < questoes.length) {
+    perguntar();
+  } else {
+    alert("fim do quiz, parabéns 🎉")
+  }
+}
