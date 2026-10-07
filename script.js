@@ -31,11 +31,17 @@ function alterar_botoes(botoes) {
 perguntar();
 //definindo a resposta correta 
 const resposta_certa = questoes[questao].certa;
+//[extra] áudios 
+const correto = new Audio("correto.mp3");
+const errado = new Audio("errado.mp3");
+const parabens = new Audio("parabens.mp3");
 //verificando se tá certo 
 function checar_resposta(opcao_escolhida) {
   if (opcao_escolhida === questoes[questao].certa) {
+    correto.play();
     alert("correto🎉")
   } else {
+    errado.play();
     alert("incorreto❌")
   }
   proxima_questao();
@@ -47,6 +53,7 @@ function proxima_questao() {
   if (questao < questoes.length) {
     perguntar();
   } else {
-    alert("fim do quiz, parabéns 🎉")
+    parabens.play();
+    alert("fim do quiz, parabéns 🎉");
   }
 }
