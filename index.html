@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
   <title>Quiz</title>
 </head>
-
+<!--a partir daqui, vc vai pegar as tags para estilizar-->
 <body>
-  <h1 >Quiz sobre o sistema nervoso</h1>
-  <section>
-    <h2 id="perg">pergunta</h2>
-    <button type="submit" onclick="incorreto()">opc1</button>
-    <button type="submit" onclick="incorreto()">opc2</button>
-    <button type="submit" onclick="certo()" >opc certa</button>
-    <p id="res"></p>
+  <main><!--estrutura principal, onde vai se concentrar tudo.-->
+  <h1>Quiz do Sistema Nervoso</h1>
+  <section><!-- área onde vai ficar a pergunta e as respostas -->
+    <h2 id="pergunta">Sua Pergunta aqui</h2>
+    <!--botões-->
+    <button type="button" class="botao">opc</button>
+    <button type="button" class="botao">opc</button>
+    <button class="botao" type="button">opc</button>
   </section>
+  </main>
+  <!-- a partir daqui, não tem mais tags estilizáveis-->
+  <script src="script.js"></script>
 </body>
 
 </html>
