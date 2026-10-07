@@ -35,14 +35,18 @@ const resposta_certa = questoes[questao].certa;
 const correto = new Audio("correto.mp3");
 const errado = new Audio("errado.mp3");
 const parabens = new Audio("parabens.mp3");
+function tocar_errado() {
+  errado.currentTime = 0;
+  errado.play();
+}
 //verificando se tá certo 
 function checar_resposta(opcao_escolhida) {
   if (opcao_escolhida === questoes[questao].certa) {
     correto.play();
     alert("correto🎉")
   } else {
-    errado.play();
-    alert("incorreto❌")
+    tocar_errado();
+    alert("incorreto❌");
   }
   proxima_questao();
 }
