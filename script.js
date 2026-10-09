@@ -74,25 +74,43 @@ function tocar_errado() {
   errado.currentTime = 0;
   errado.play();
 }
-//verificando se tá certo 
-function checar_resposta(opcao_escolhida) {
+//verificando se tá certo
+ function checar_resposta(opcao_escolhida) {
   if (opcao_escolhida === questoes[questao].certa) {
     correto.play();
-    alert("correto🎉")
+    mostrarMensagem('🎉 Parabéns! Correto!', '#27ae60');
   } else {
     tocar_errado();
-    alert("incorreto❌");
+    mostrarMensagem('😯 Ops! Tente de novo!', '#e74c3c');
   }
   proxima_questao();
 }
+ 
+
 function proxima_questao() {
-  //muda a questão 
   questao++;
-  //verifica se tem questões sobrando.
   if (questao < questoes.length) {
     perguntar();
   } else {
     parabens.play();
-    alert("fim do quiz, parabéns 🎉");
+    mostrarMensagem('🎊 Parabéns! Você terminou!', '#3498db');
   }
+}
+
+
+function mostrarMensagem(texto, cor) {
+  const msg = document.getElementById('msg');
+  msg.textContent = texto;
+  msg.style.display = 'block';
+  msg.style.backgroundColor = cor;
+  msg.style.color = 'white';
+  msg.style.padding = '12px';
+  msg.style.borderRadius = '8px';
+  msg.style.textAlign = 'center';
+  msg.style.fontSize = '20px';
+  msg.style.fontWeight = 'bold';
+  msg.style.marginTop = '20px';
+  setTimeout(() => {
+    msg.style.display = 'none';
+  }, 2500);
 }

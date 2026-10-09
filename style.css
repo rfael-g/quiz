@@ -1,12 +1,46 @@
 /*oi mateus*/
 /*faça as suas alterações aqui, e exporte para o repositório*/ 
 /*lembre-se de garantir que não tenha nenhum bug no código*/
-body{
- background-color: #649;
+ 
+
+body {
+  background-color: rgb(173, 216, 230);
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
-main{
- background-color: #fff;
- padding: 10px;
- border-radius: 10px;
+
+
+
+
+
+
+main {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 500px;
+  margin: 30px auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: none;
 }
-67
+
+button {
+  background-color: rgb(64, 164, 223);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 8px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: rgb(46, 170, 230);
+}
+
+
+
+
