@@ -1,5 +1,5 @@
 # quiz
-Um quiz , para a feira de ciências
+Um quiz , para a feira de ciências.
 
 
 
