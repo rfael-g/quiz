@@ -1,7 +1,6 @@
 /*oi mateus*/
 /*faça as suas alterações aqui, e exporte para o repositório*/ 
 /*lembre-se de garantir que não tenha nenhum bug no código*/
-@charset: "utf-8";
 
 body {
   background-color: rgb(173, 216, 230);
@@ -64,8 +63,6 @@ button:hover {
   font-size: 3em;
   margin: 0.1em;
   margin-left: 0.2em;
-  color: #fff;
+  color: #FFFFFF;
 }
-
-
 

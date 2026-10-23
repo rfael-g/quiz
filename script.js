@@ -1,3 +1,25 @@
+//easter egg, com créditos
+console.group("%c Creditos","font-size: 1.3em;");
+  console.group("%c Categorias Gerais","font-size: 1.1em;");
+  console.log("%c > Javascript: " + "%c Rafael Goudinho, Mateus Soares.","color: yellow;","color: white;");
+  console.log("%c > html: " + "%c Rafael Goudinho, Mateus Soares.","color: orange;","color: white;");
+  console.log("%c > css: " + "%c Mateus Soares, Rafael Goudinho.","color: cyan;","color: white;");
+  console.groupEnd();
+  console.group("%c Categorias específicas","font-size: 1.1em;");
+  console.log("%c > Javascript geral: " + "%c Rafael Goudinho.","color: #158335;","color: white;");
+  console.log("%c > html geral: " + "%c Rafael Goudinho.","color: #158335;","color: white;")
+  console.log("%c > css geral: " + "%c Mateus Soares.","color: #158335;","color: white;");
+  console.log("%c > Javascript final: " + "%c Rafael Goudinho, Mateus Soares.","color: #9c0000;","color: white;");
+  console.log("%c > html final: " + "%c Rafael Goudinho, Mateus Soares.","color: #9c0000;","color: white;");
+  console.log("%c > css final: " + "%c Rafael Goudinho.","color: #9c0000","color: white;");
+  console.log("%c > debug geral: " + "%c Rafael Goudinho.","color: #6200b0;","color: white;");
+  console.log("%c > controle de git e github: " + "%c Rafael Goudinho.","color: #6200b0;","color: white;");
+  console.log("%c > perguntas: " + "%c Maria Helena.","color: #6200b0;","color: white;");
+  console.groupEnd();
+  console.groupEnd();
+  //Copyright 
+  console.warn("todos os diretos reservados a" + "%c Rafael Goudinho Pereira Mariano","color: white;")
+  
 //lista de perguntas 
 const questoes = [
   {
