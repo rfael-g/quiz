@@ -69,7 +69,6 @@ const resposta_certa = questoes[questao].certa;
 //[extra] áudios 
 const correto = new Audio("correto.mp3");
 const errado = new Audio("errado.mp3");
-const parabens = new Audio("parabens.mp3");
 function tocar_errado() {
   errado.currentTime = 0;
   errado.play();
@@ -101,7 +100,6 @@ function proxima_questao() {
   if (questao < questoes.length) {
     perguntar();
   } else {
-    parabens.play();
     mostrarMensagem('🎊 Parabéns! Você terminou!', '#3498db');
     console.log(acerto,erro)
     //transferindo os dados de acerto e erro
