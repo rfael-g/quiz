@@ -74,13 +74,22 @@ function tocar_errado() {
   errado.currentTime = 0;
   errado.play();
 }
+function tocar_certo() {
+  correto.currentTime = 0;
+  correto.play();
+}
+//declarando acertos e erros 
+let acerto = 0
+let erro = 0
 //verificando se tá certo
  function checar_resposta(opcao_escolhida) {
   if (opcao_escolhida === questoes[questao].certa) {
-    correto.play();
+    tocar_certo();
+    acerto++
     mostrarMensagem('🎉 Parabéns! Correto!', '#27ae60');
   } else {
     tocar_errado();
+    erro++
     mostrarMensagem('😯 Ops! Tente de novo!', '#e74c3c');
   }
   proxima_questao();
@@ -94,8 +103,16 @@ function proxima_questao() {
   } else {
     parabens.play();
     mostrarMensagem('🎊 Parabéns! Você terminou!', '#3498db');
+    console.log(acerto,erro)
+    //transferindo os dados de acerto e erro
+localStorage.setItem('totalA',acerto);
+localStorage.setItem('totalE',erro);
+window.location.href = "fim.html";
+
+
   }
 }
+
 
 
 function mostrarMensagem(texto, cor) {
