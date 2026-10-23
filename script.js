@@ -100,7 +100,6 @@ function proxima_questao() {
   if (questao < questoes.length) {
     perguntar();
   } else {
-    mostrarMensagem('🎊 Parabéns! Você terminou!', '#3498db');
     console.log(acerto,erro)
     //transferindo os dados de acerto e erro
 localStorage.setItem('totalA',acerto);
