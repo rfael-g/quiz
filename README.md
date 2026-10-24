@@ -29,6 +29,7 @@ Um quiz , para a feira de ciências.
 
 [x] verificação de respostas
 
-[] responsividade 
+[x] responsividade 
 
-[] estilos
+[x] estilos
+

@@ -1,4 +1,5 @@
 //easter egg, com créditos
+//aqui é onde fica as mensagens do console.
 console.group("%c Creditos","font-size: 1.3em;");
   console.group("%c Categorias Gerais","font-size: 1.1em;");
   console.log("%c > Javascript: " + "%c Rafael Goudinho, Mateus Soares.","color: yellow;","color: white;");
@@ -14,6 +15,7 @@ console.group("%c Creditos","font-size: 1.3em;");
   console.log("%c > css final: " + "%c Rafael Goudinho.","color: #9c0000","color: white;");
   console.log("%c > debug geral: " + "%c Rafael Goudinho.","color: #6200b0;","color: white;");
   console.log("%c > controle de git e github: " + "%c Rafael Goudinho.","color: #6200b0;","color: white;");
+  console.log("%c > comentarios e documentacao: " + "%c Rafael Goudinho","color: #6200b0;","color: white;")
   console.log("%c > perguntas: " + "%c Maria Helena.","color: #6200b0;","color: white;");
   console.groupEnd();
   console.groupEnd();
@@ -21,21 +23,22 @@ console.group("%c Creditos","font-size: 1.3em;");
   console.warn("todos os diretos reservados a" + "%c Rafael Goudinho Pereira Mariano","color: white;")
   
 //lista de perguntas 
+// se quiser alterar as perguntas, mude essa parte.
 const questoes = [
   {
     pergunta: "1. O que é o Sistema Nervoso?",
     opcoes: ["O sistema que transporta sangue e nutrientes pelo corpo.","O sistema que coordena as ações do corpo e transmite sinais pelo organismo","O sistema que digere os alimentos e absorve os nutrientes."],
-    certa: 1 //segunda opção 
+    certa: 1 ,
   },
   {
     pergunta: "2 qual é a principal célula do sistema nervoso?",
     opcoes: ["Neurônio","Glóbulo Vermelho","Célula do Sangue"],
-    certa: 0 //primeira opção ,
+    certa: 0 ,
   },
   {
     pergunta: "3. Qual é a função dos nervos?",
     opcoes: ["Bombear o sangue","Levar mensagens entre o corpo e o cérebro","Digerir os alimentos"],
-    certa: 1 
+    certa: 1 ,
   },
   {
     pergunta: "4. Quais são as partes do Sistema Nervoso Central?",
@@ -132,7 +135,7 @@ window.location.href = "fim.html";
   }
 }
 
-
+//mostrar mensagem de acerto e erro
 
 function mostrarMensagem(texto, cor) {
   const msg = document.getElementById('msg');

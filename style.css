@@ -1,6 +1,4 @@
-/*oi mateus*/
-/*faça as suas alterações aqui, e exporte para o repositório*/ 
-/*lembre-se de garantir que não tenha nenhum bug no código*/
+/*fundo*/
 
 body {
   background-color: rgb(173, 216, 230);
@@ -12,7 +10,7 @@ body {
 
 
 
-
+/*estruturas principais*/
 
 main {
   background-color: white;
@@ -39,6 +37,7 @@ button {
 button:hover {
   background-color: rgb(46, 170, 230);
 }
+/*segunda página*/
 
 #certo{
   padding: 5px;
