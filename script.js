@@ -20,7 +20,7 @@ console.group("%c Creditos","font-size: 1.3em;");
   console.groupEnd();
   console.groupEnd();
   //Copyright 
-  console.warn("todos os diretos reservados a" + "%c Rafael Goudinho Pereira Mariano","color: white;")
+  console.warn("todos os diretos reservados a" + "%c Rafael Goudinho Pereira Mariano","color: gray;")
   
 //lista de perguntas 
 // se quiser alterar as perguntas, mude essa parte.
