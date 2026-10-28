@@ -2,7 +2,8 @@
 
 body {
   background-color: rgb(173, 216, 230);
-  margin: 0;
+  margin: none;
+  padding: none;
   padding: 20px;
   font-family: Arial, sans-serif;
 }
@@ -20,6 +21,7 @@ main {
   margin: 30px auto;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   border: none;
+  transform: translateY(50);
 }
 
 button {
